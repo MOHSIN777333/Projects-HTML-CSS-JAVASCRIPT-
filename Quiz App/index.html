@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <!-- START SCREEN -->
+        <div id="getInfoContainer">
+            <div class="inp-container">
+                <input type="text" id="nameInp" placeholder="Enter a Name...">
+            </div>
+
+            <div class="btns-container" id="btnOption">
+                <button class="btn">Easy</button>
+                <button class="btn">Medium</button>
+                <button class="btn">Hard</button>
+            </div>
+
+            <div class="submit-btn">
+                <button id="submit">Submit</button>
+            </div>
+        </div>
+
+        <!-- QUIZ SCREEN -->
+        <div id="quizScreen" class="screen">
+            <div class="quizHeader">
+                <div id="questionInfo">
+                    <span id="totalQuestion">Question: 5</span>
+                    <span>/</span>
+                    <span id="attempQuestion">2</span>
+                </div>
+            </div>
+
+            <div class="score-info">
+                <span id="score">Score : 0</span>
+            </div>
+
+            <div class="question" id="questionContainer">
+                What is javascript?
+            </div>
+
+            <div class="line"></div>
+
+            <div class="buttons" id="btnContainer">
+                <button>Programming Language</button>
+                <button>Database</button>
+                <button>Browser</button>
+                <button>Server</button>
+            </div>
+
+            <div class="progress">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </div>
+
+        <!-- RESULT SCREEN -->
+        <div class="screen result-screen" id="resultScreen">
+
+            <div class="result-info">
+                <p>
+                    <span id="final-score"></span>
+                </p>
+
+                <div class="message">
+                    <h3 id="message"></h3>
+                </div>
+            </div>
+
+            <div class="result-screen-btn">
+                <button class="btn" id="re-try">Try Again</button>
+                <button class="btn" id="reset">Reset</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./script.js" type="module"></script>
+
+</body>
+
+</html>
