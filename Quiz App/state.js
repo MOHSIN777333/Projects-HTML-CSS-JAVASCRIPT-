@@ -7,4 +7,4 @@ let state = {
     answer: false,
 }
 
-export default state;
+export default state
