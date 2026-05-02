@@ -16,7 +16,7 @@
 
 body {
     background-color: var(--primary-blue);
-    font-family: 'Inter', 'Roboto', sans-serif;
+    font-family: 'Inter', 'Roboto', system-ui, sans-serif;
     min-height: 100vh;
     display: grid;
     place-items: center;
@@ -76,6 +76,10 @@ h1 {
     transform: scale(1.03);
 }
 
+.color-box.copied {
+    outline: 3px solid #22c55e;
+    outline-offset: 2px;
+}
 .box {
     height: 150px;
     width: 100%;
