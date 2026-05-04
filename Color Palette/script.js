@@ -10,9 +10,12 @@ paletteEl.addEventListener("click", (e) => {
 
     } else if (e.target.classList.contains("box")) {
         const infoDiv = e.target.nextElementSibling
+
         const hexValue = infoDiv.querySelector(".hex-value").textContent;
+
         const copyBtn = infoDiv.querySelector(".fa-copy");
-        copyToClipBorad(hexValue, copyBtn)
+
+        copyToClipBoard(hexValue, copyBtn)
 
 
     }
@@ -21,6 +24,8 @@ paletteEl.addEventListener("click", (e) => {
 });
 
 function copyToClipBoard(text, iconEl) {
+    console.log(iconEl);
+
     navigator.clipboard.writeText(text)
         .then(() => showCopySuccess(iconEl))
         .catch(err => console.log(err)
