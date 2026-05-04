@@ -21,11 +21,12 @@ instantly and copy hex codes with one click.
 
 ## 📸 Preview
 
-![Color Palette Generator Preview](./preview.png)
+![Color Palette Generator Preview](./projectTowImg.png)
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://mohsin777333.github.io/color-palette-generator)
+[View Live Demo](https://mohsin777333.github.io/Projects-HTML-CSS-JAVASCRIPT-/Quiz%20App/
+)
 
 ## 💻 Run Locally
 
