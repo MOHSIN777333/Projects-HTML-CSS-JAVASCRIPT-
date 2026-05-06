@@ -25,7 +25,7 @@ instantly and copy hex codes with one click.
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://mohsin777333.github.io/Projects-HTML-CSS-JAVASCRIPT-/Quiz%20App/
+[View Live Demo](https://mohsin777333.github.io/Projects-HTML-CSS-JAVASCRIPT-/Color%20Palette/)
 )
 
 ## 💻 Run Locally
