@@ -2,12 +2,43 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./CSS/login.css" />
 </head>
 
 <body>
+
+    <div class="auth-container">
+        <h2>Welcome Back 👋</h2>
+
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Email" />
+            <input type="password" id="password" placeholder="Password" />
+            <button type="submit" id="loginBtn">Login</button>
+        </form>
+
+        <div class="divider">or</div>
+
+        <button id="googleBtn" class="oauth-btn">
+            Continue with Google 🔵
+        </button>
+        <button id="githubBtn" class="oauth-btn">
+            Continue with GitHub 🐙
+        </button>
+
+        <p>
+            Account nahi hai? <a href="signin.html">Signup karo</a>
+        </p>
+        <p>
+            <a href="forgot-password.html">Password bhool gaye?</a>
+        </p>
+
+        <p id="errorMsg" class="error"></p>
+    </div>
+
+    <script type="module" src="./supaBase/config/auth.js"></script>
 
 </body>
 

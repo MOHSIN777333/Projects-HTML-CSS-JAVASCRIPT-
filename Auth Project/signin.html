@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IdentityPro - Create Account</title>
+    <link rel="stylesheet" href="./CSS/signup.css">
+</head>
+
+<body>
+
+    <div class="auth-container">
+        <main class="auth-card">
+            <h1>Create Account</h1>
+            <p class="subtitle">Secure your corporate identity today.</p>
+
+            <form class="auth-form" novalidate id="signupForm">
+                <div class="form-group">
+
+                    <label for="email">Email Address</label>
+                    <div class="input-wrapper">
+                        <input type="email" id="email" placeholder="name@company.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="input-wrapper">
+                        <input type="password" id="password" placeholder="••••••••" required>
+                        <button type="button" class="password-toggle" id="togglePass">👁️</button>
+                    </div>
+                    <small class="helper-text" id="messageErr">Must be at least 12 characters with a symbol.</small>
+                </div>
+
+                <label class="checkbox-container">
+                    <input type="checkbox" required>
+                    <span class="checkmark"></span>
+                    <span class="label-text">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy
+                            Policy</a>.</span>
+                </label>
+
+                <button type="submit" class="btn-primary" id="signupBtn">Create Account</button>
+            </form>
+
+            <div class="divider">
+                <span>OR CONTINUE WITH</span>
+            </div>
+
+            <div class="social-grid">
+                <button class="btn-secondary" id="googleBtn">
+                    <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" height="150"
+                        width="20" alt="Google">
+                    Google
+                </button>
+                <!-- ✅ FIX — GitHub add karo -->
+                <button class="btn-secondary" id="githubBtn">
+                    GitHub 🐙
+                </button>
+            </div>
+
+            <p class="footer-link">Already have an account? <a href="login.html">Log in</a></p>
+        </main>
+
+        <footer class="page-footer">
+            <nav>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Security</a>
+                <a href="#">Contact Support</a>
+            </nav>
+            <p>© 2024 IdentityPro Systems. All rights reserved.</p>
+        </footer>
+    </div>
+
+
+    <script type="module" src="./supaBase/config/auth.js"></script>
+</body>
+
+</html>

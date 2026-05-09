@@ -2,13 +2,33 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home — Dashboard</title>
+    <link rel="stylesheet" href="CSS/index.css">
 </head>
 
 <body>
 
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">⚡ AuthApp</div>
+        <div class="nav-right">
+            <span id="userEmail">loading...</span>
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="hero">
+        <h1>Welcome back, <span id="userName">User</span> 👋</h1>
+        <p>Tum successfully login ho — yeh page sirf logged-in users dekh sakte hain!</p>
+        <div class="badge">🔒 Protected Route — Active</div>
+    </div>
+
+
+
+    <script type="module" src="./supaBase/config/protected.js"></script>
 </body>
 
 </html>
